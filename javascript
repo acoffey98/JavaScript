@@ -88,7 +88,8 @@ console.log(Math.random()*100);
 
 console.log(Math.floor(Math.random()*100));
 
-//Find a method on the javascript Math object that returns the smallest integer greater than or equal to a decimal number:
+//Find a method on the javascript Math object that returns the smallest 
+ger greater than or equal to a decimal number:
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
@@ -103,6 +104,20 @@ Use the JavaScript documentation to find a method on the built-in Number object 
 Put the number 2017 in the parentheses of the method and use console.log() to print the result.
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger
 The Number.isInteger() method determines whether the passed value is an integer. 
+
+function fits(x, y) {
+  if (Number.isInteger(y / x)) {
+    return 'Fits!';
+  }
+  return 'Does NOT fit!';
+}
+
+console.log(fits(5, 10));
+// expected output: "Fits!"
+
+console.log(fits(5, 11));
+// expected output: "Does NOT fit!"
+
 
 Number.isInteger()
 
@@ -123,10 +138,15 @@ The properties are denoted with a . after the name of the object, for example: '
 instance with a period, the method name, and parentheses. For example: 'hello'.toUpperCase().
 > We can access properties and methods by using the ., dot operator.
 > Built-in objects, including Math, are collections of methods and properties that JavaScript provides.
-
-
-
-
+> Variables hold reusable data in a program and associate it with a name.
+> Variables are stored in memory.
+> The var keyword is used in pre-ES6 versions of JS.
+> let is the preferred way to declare a variable when it can be reassigned, and const is the preferred way to declare a variable with a constant value.
+> Variables that have not been initialized store the primitive data type undefined.
+> Mathematical assignment operators make it easy to calculate a new value and assign it to the same variable.
+> The + operator is used to concatenate strings including string values held in variables
+> In ES6, template literals use backticks ` and ${} to interpolate values into a string.
+> The typeof keyword returns the data type (as a string) of a value.
 
 
 

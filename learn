@@ -1,0 +1,95 @@
+//Arrays
+
+const hobbies = ['Hello', 'Alex', 'MyName'];
+console.log(hobbies);
+
+//Accessing arrays:
+rrays in JavaScript are zero-indexed, meaning the positions start counting from 0 rather than 1. 
+Therefore, the first item in an array will be at position 0. Let’s see how we could access an element in an array: 
+
+const famousSayings = ['Fortune favors the brave.', 'A joke is a very serious thing.', 'Where there is love there is life.'];
+
+const listItem = famousSayings[0];
+
+console.log(famousSayings[2]);
+
+
+UPDATE elements:
+
+let groceryList = ['bread', 'tomatoes', 'milk'];
+
+groceryList[2] = 'eggs';
+console.log(groceryList);
+
+You may recall that you can declare variables with both the let and const keywords. Variables declared with let can be reassigned.
+
+Variables declared with the const keyword cannot be reassigned. However, elements in an array declared with const remain mutable. 
+Meaning that we can change the contents of a const array, but cannot reassign a new array or a different value. 
+
+.length property:
+
+const objectives = ['Learn a new languages', 'Read 52 books', 'Run a marathon'];
+console.log(objectives.length);
+
+PUSH Mehtod:
+So, how does .push() work? 
+One method, .push() allows us to add items to the end of an array. Here is an example of how this is used:
+
+const chores = ['wash dishes', 'do laundry', 'take out trash'];
+//working with arrays easier
+//adding and removing elements 
+
+chores.push('wash table', 'clean bathroom');
+console.log(chores);
+
+
+THE POP METHOD:
+removes last item of array
+.pop() does not take any arguments, it simply removes the last element of newItemTracker. 
+
+const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+
+//removes last item of list
+chores.pop();
+
+MORE ARRAY METHODS:
+push, pop, join, slice, splice, shift, unshift, concat
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
+
+.shift() removes first element from array
+
+groceryList.unshift('popcorn');
+console.log(groceryList);
+
+unshift() adds element to the beginning of the array
+
+Let’s find the index of a particular element in groceryList using .indexOf(). 
+Call .indexOf() on groceryList to find the index of the element 'pasta' and 
+save the returned value to a const variable named pastaIndex. 
+
+
+const pastaIndex = groceryList.indexOf('pasta');
+
+console.log(pastaIndex);
+https://www.codecademy.com/courses/introduction-to-javascript/lessons/arrays/exercises/array-in-functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
